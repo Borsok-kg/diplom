@@ -1232,6 +1232,9 @@ video#video_background {
 	padding: 0 2px;
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.6);
+	display: none;
+	transition: all 1s ease-in-out;
+	animation: modal_animated 0.5s ease-in-out backwards;
 }
 
 @media only screen and (min-width: 992px) {

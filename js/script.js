@@ -5,8 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const togglePopUp = () => {
 
         const popUp = document.querySelector('.modal-callback'),
-            popUpBackground = document.querySelector('.modal-overlay'),
-            popUpBtn = document.querySelector('.callback-btn');
+            popUpBackground = document.querySelector('.modal-overlay');
     
         document.body.addEventListener('click', event => {
             let target = event.target;
@@ -21,4 +20,35 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     togglePopUp();
+
+    // Стрелка вверх
+    const arrowUp = () => {
+        const up = document.querySelector('.up');
+
+        function ScrollUp(){
+            let timeOut;
+
+            if (window.pageYOffset > 0) {
+                window.scrollBy(0, -100);
+                timeOut = setTimeout(ScrollUp, 20);
+            } else {
+                clearTimeout(timeOut);
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset >= 666) {
+                up.style.display = 'block';
+            } else {
+                up.style.display = 'none';
+            }
+        });
+
+        up.addEventListener('click', () => {
+            ScrollUp();
+        });
+
+    };
+
+    arrowUp();
 });
