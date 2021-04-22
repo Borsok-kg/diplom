@@ -1220,7 +1220,9 @@ video#video_background {
 	font-weight: bold;
 	color: #2fab6d;
 }
-
+html {
+	scroll-behavior: smooth;
+	}
 .up {
 	position: fixed;
 	bottom: 50px;

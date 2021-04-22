@@ -25,12 +25,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const arrowUp = () => {
         const up = document.querySelector('.up');
 
-        function ScrollUp(){
+        function scrollUp(){
             let timeOut;
 
             if (window.pageYOffset > 0) {
                 window.scrollBy(0, -100);
-                timeOut = setTimeout(ScrollUp, 20);
+                timeOut = setTimeout(scrollUp, 20);
             } else {
                 clearTimeout(timeOut);
             }
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         up.addEventListener('click', () => {
-            ScrollUp();
+            scrollUp();
         });
 
     };
