@@ -985,6 +985,7 @@ video#video_background {
 	padding: 20px;
 	font-size: 13px;
 	color: #888885;
+	animation: modal_animated 0.5s ease-in-out backwards;
 }
 .accordeon .element {
 	margin-bottom: 6px;
