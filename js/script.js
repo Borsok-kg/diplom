@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
         document.body.addEventListener('click', event => {
             let target = event.target;
-            if (target.closest('.callback-btn')) {
+            if (target.closest('.callback-btn, .button-services')) {
                 popUp.style.display = 'block';
                 popUpBackground.style.display = 'block';
             } else if (target.closest('.modal-close') || target.closest('.modal-overlay')) {
@@ -51,4 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     arrowUp();
+
+    
 });
