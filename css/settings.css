@@ -510,34 +510,32 @@ img.right{
 .slider-wrapper .item img{
     min-height: 300px;
 }
-.slick-dots {
+.dots_wrapper {
   width: 100%;
   padding: 0;
   list-style: none;
   text-align: center;
   display: block;
 }
-.slick-dots li button{
+.dots_wrapper li button{
     position: absolute;
     top: -5px;
     left: -5px;
     border: none;
-    border-radius: 50%;
     display: block;
     opacity: 0;
 }
-.slick-dots li {
+.dots_wrapper li {
     cursor: pointer;
     border: 2px solid #E9BB26;
     display: inline-block;
-    border-radius: 50%;
     width: 14px;
     height: 14px;
     margin: 0 6px;
     cursor: pointer;
     position: relative;
 }
-.slick-dots li.slick-active{
+.dots_wrapper li.slick-active{
     background: #E9BB26;
 }
 .slick-prev,

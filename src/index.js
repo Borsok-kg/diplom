@@ -5,6 +5,7 @@ import arrowUp from './modules/arrowUp';
 import correctnessOfInput from './modules/correctnessOfInput';
 import sendForm from './modules/sendForm';
 import tabs from './modules/tabs';
+import slider from './modules/slider';
 
 // Модальное окно
 togglePopUp();
@@ -20,3 +21,6 @@ sendForm();
 
 // Блок ЧАВО
 tabs();
+
+// Слайдер
+slider();
