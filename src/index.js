@@ -1,11 +1,11 @@
 'use strict';
 
-import togglePopUp from './modules/togglePopUp';
-import arrowUp from './modules/arrowUp';
-import correctnessOfInput from './modules/correctnessOfInput';
-import sendForm from './modules/sendForm';
-import tabs from './modules/tabs';
-import slider from './modules/slider';
+import togglePopUp from './modules/togglePopUp.js';
+import arrowUp from './modules/arrowUp.js';
+import correctnessOfInput from './modules/correctnessOfInput.js';
+import sendForm from './modules/sendForm.js';
+import tabs from './modules/tabs.js';
+import slider from './modules/slider.js';
 
 // Модальное окно
 togglePopUp();

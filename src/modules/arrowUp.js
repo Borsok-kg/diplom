@@ -1,16 +1,16 @@
 const arrowUp = () => {
-    const up = document.querySelector('.up');
+    const up = document.querySelector('.up'),
+        anchor = document.querySelector('#services');
 
-    function scrollUp(){
-        let timeOut;
+    up.addEventListener('click', () => {
+        const scrollTarget = document.querySelector('body'),
+            position = scrollTarget.getBoundingClientRect().top;
 
-        if (window.pageYOffset > 0) {
-            window.scrollBy(0, -100);
-            timeOut = setTimeout(scrollUp, 20);
-        } else {
-            clearTimeout(timeOut);
-        }
-    }
+        window.scrollBy({
+            top: position,
+            behavior: 'smooth'
+        });
+    });
 
     window.addEventListener('scroll', () => {
         if (window.pageYOffset >= 666) {
@@ -19,11 +19,6 @@ const arrowUp = () => {
             up.style.display = 'none';
         }
     });
-
-    up.addEventListener('click', () => {
-        scrollUp();
-    });
-
 };
 
 export default arrowUp;
