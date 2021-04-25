@@ -1105,6 +1105,12 @@ video#video_background {
 .services-section .element {
 	margin-bottom: 20px;
 }
+.services-elements {
+	overflow: hidden;
+}
+.services-carousel {
+	transition: all 0.5s ease-in-out;
+}
 .services-section .element .element-content {
 	padding: 20px;
 	background: #fff;

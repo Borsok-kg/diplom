@@ -11,7 +11,6 @@ const arrowUp = () => {
             behavior: 'smooth'
         });
     });
-
     window.addEventListener('scroll', () => {
         if (window.pageYOffset >= 666) {
             up.style.display = 'block';

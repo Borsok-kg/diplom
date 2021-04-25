@@ -6,6 +6,7 @@ import correctnessOfInput from './modules/correctnessOfInput.js';
 import sendForm from './modules/sendForm.js';
 import tabs from './modules/tabs.js';
 import slider from './modules/slider.js';
+import carousel from './modules/carousel.js';
 
 // Модальное окно
 togglePopUp();
@@ -24,3 +25,6 @@ tabs();
 
 // Слайдер
 slider();
+
+// Карусель
+carousel();
